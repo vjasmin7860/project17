@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>
+            this is the parota section
+            <h1><a href="{% url 'food:biryani' %}">shift to food section</a></h1>
+            <h1><a href="{% url 'drinks:sprit' %}">shift to juice  section</a></h1>
+            <h1><a href="{% url 'drinks:mazza' %}">shift to mazza juice</a></h1>
+            <img src="{% static 'images/parota.jpeg' %}" alt="image not found">
+            
+        </h1>
+    </center>
+</body>
+</html>

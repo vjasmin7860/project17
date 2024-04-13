@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>this is the mazza drinks section</h1>
+            <h1><a href="{% url 'food:biryani' %}">shift to food section</a></h1>
+           <h1><a href="{% url 'food:parota' %}">shift to food section</a></h1>
+           <h1> <a href="{% url 'drinks:sprit' %}">shift to sprit juice</a></h1>
+           <img src="{% static 'images/mazza.jpeg' %}" alt="image not found">
+    </center>
+</body>
+</html>
